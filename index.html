@@ -4,43 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
     <title>AI Naturat Remidies</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome To AI-Natural Remidies</h1>
-    </header>
+    <div class="body">
+      <header>
+        <h1>Welcome To AI-Natural Remidies</h1>
+        <form>
+          <div class="searchForm">
+            <input
+              type="text"
+              placeholder="Enter Your Problem For A Better Solution!"
+              required
+              autofocus
+              autocomplete="off"
+              class="search-bar"
+            />
+            <input type="submit" value="❓" class="button" />
+          </div>
+        </form>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter Your Problem Here!"
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div></div>
-    </main>
+      <main>
+        <div class="AI-Remidy">
+          Elderberry Syrup: A popular remedy for colds and flu, elderberry syrup
+          is made by simmering elderberries with water and sugar, then straining
+          the mixture. This syrup can be taken by the spoonful to boost
+          immunity.
+        </div>
+      </main>
 
-    <footer>
-      It is coded by
-      <a href="https://github.com/samanriaz008-okk" target="_blank"
-        >Saman Riaz</a
-      >
-      and is an open-source on
-      <a
-        href="https://github.com/samanriaz008-okk/AI-Natural-Remidy-Generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and
-      <a href="https://ai-naturalremidy.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        It is coded by
+        <a href="https://github.com/samanriaz008-okk" target="_blank"
+          >Saman Riaz</a
+        >
+        and is an open-source on
+        <a
+          href="https://github.com/samanriaz008-okk/AI-Natural-Remidy-Generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and
+        <a href="https://ai-naturalremidy.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

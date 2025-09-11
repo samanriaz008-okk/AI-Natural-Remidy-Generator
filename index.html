@@ -4,17 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
-    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Naturat Remidies</title>
   </head>
   <body>
     <div class="body">
       <header>
         <h1>Welcome To AI-Natural Remidies</h1>
-        <form>
+        <form id="remidy-search-form">
           <div class="searchForm">
             <input
               type="text"
@@ -30,12 +27,7 @@
       </header>
 
       <main>
-        <div class="AI-Remidy">
-          Elderberry Syrup: A popular remedy for colds and flu, elderberry syrup
-          is made by simmering elderberries with water and sugar, then straining
-          the mixture. This syrup can be taken by the spoonful to boost
-          immunity.
-        </div>
+        <div class="AI-Remidy" id="AI-Remidy"></div>
       </main>
 
       <footer>

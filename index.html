@@ -4,30 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <title>AI Naturat Remidies</title>
+    <title>AI Naturat Remedies</title>
   </head>
   <body>
     <div class="body">
       <header>
-        <h1>Welcome To AI-Natural Remidies</h1>
+        <h1>Welcome To AI-Natural Remedies</h1>
         <form id="remidy-search-form">
           <div class="searchForm">
             <input
               type="text"
-              placeholder="Enter Your Problem For A Better Solution!"
+              placeholder="Search Home Remedy Here!"
               required
               autofocus
               autocomplete="off"
               class="search-bar"
+              id="search-input"
             />
             <input type="submit" value="❓" class="button" />
+          </div>
+          <div class="tip" id="tip">
+            <strong>Tip:</strong> If the answer is not relevent try clicking ❓
+            again until you find your reletive answer.
           </div>
         </form>
       </header>
 
       <main>
-        <div class="AI-Remidy" id="AI-Remidy"></div>
+        <div class="AI-Remedy" id="AI-Remedy"></div>
       </main>
 
       <footer>

@@ -20,8 +20,8 @@ h1 {
 }
 .searchForm {
   padding: 24px;
-  margin: 30px;
-  width: 70%;
+  margin: 30px 30px 0 30px;
+  width: 80%;
   border-radius: 10px;
   background-color: rgb(11, 179, 179);
   display: flex;
@@ -50,9 +50,9 @@ main {
   line-height: 26px;
   font-size: 17px;
 }
-.AI-Remidy {
+.AI-Remedy {
   padding: 18px;
-  margin: 50px;
+  margin: 60px;
   border-left: rgb(8, 219, 219) solid;
 }
 footer {
@@ -60,4 +60,9 @@ footer {
 }
 a {
   color: rgb(8, 187, 187);
+}
+.tip {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 20px 20px 20px;
 }

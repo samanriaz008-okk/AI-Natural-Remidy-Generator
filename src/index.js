@@ -13,13 +13,17 @@ function generateRemedy(event) {
   let inputValue = document.querySelector("#search-input");
 
   let apiKey = "9aa8ab264078edftd860c3e0foabbd02";
-  let prompt = `Generate a remidy for ${inputValue}`;
+  let prompt = `Generate a remidy for ${inputValue.value}`;
   let context =
     "You have a great knowledge about homeopathy and natural remedies. Your mission is to give a short,best and most safest home remedy. It should be in html format. Also add the source name at the end using <strong> element. do not write ```html at the top and also do not give a heading. Give answer to the given symptoms specificly";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let remidyContainer = document.querySelector("#AI-Remedy");
+  remidyContainer.classList.remove("hidden");
+  remidyContainer.innerHTML = `<div class="blink">Generating remedy for ${inputValue.value}...</ div>`;
+
   axios.get(apiUrl).then(displayRremedy);
 }
 
-let inputElement = document.querySelector("#remidy-search-form");
+let inputElement = document.querySelector("#remedy-search-form");
 inputElement.addEventListener("submit", generateRemedy);

@@ -55,6 +55,16 @@ main {
   margin: 60px;
   border-left: rgb(8, 219, 219) solid;
 }
+.blink {
+  animation: blink-animation 1s step-start 0s infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
 footer {
   text-align: center;
 }
@@ -65,4 +75,10 @@ a {
   font-size: 14px;
   text-align: center;
   margin: 0 20px 20px 20px;
+}
+strong {
+  color: rgb(120, 225, 225);
+}
+.hidden {
+  display: none;
 }
